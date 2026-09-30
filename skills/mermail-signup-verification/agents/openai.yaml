@@ -1,0 +1,11 @@
+interface:
+  display_name: "Mermail Signup Verification"
+  short_description: "Complete signup verification workflow: provision mailbox, wait for verification email, extract code/link"
+  default_prompt: "Use $mermail-signup-verification to handle the complete email verification workflow for a user signup."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "mermail"
+      description: "Mermail workspace and mailbox MCP server"
+      transport: "streamable_http"
+      url: "https://console.mermail.app/mcp"
